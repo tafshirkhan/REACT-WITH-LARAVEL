@@ -540,3 +540,19 @@ a.social:hover {
   color: rgb(255, 251, 0);
   text-decoration: none;
 }
+
+.LoadingAnimation {
+  width: 150px;
+  height: 150px;
+}
+.ErrorAnimation {
+  width: 130px;
+  height: 130px;
+}
+
+.notFound {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #020231;
+}

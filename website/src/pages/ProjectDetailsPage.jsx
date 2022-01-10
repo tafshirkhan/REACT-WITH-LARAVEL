@@ -5,6 +5,14 @@ import TopNavbar from "../components/TopNavbar/TopNavbar";
 import TopPage from "../components/TopPage/TopPage";
 
 class ProjectDetailsPage extends Component {
+  constructor({ match }) {
+    super();
+    this.state = {
+      ProjectDetailsID: match.params.projectID,
+      ProjectDetailsNAME: match.params.projectNAME,
+    };
+  }
+
   componentDidMount() {
     window.scroll(0, 0);
   }
@@ -12,8 +20,8 @@ class ProjectDetailsPage extends Component {
     return (
       <Fragment>
         <TopNavbar title="Project Details" />
-        <TopPage pagetitle="Project Details" />
-        <ProjectDetails />
+        <TopPage pagetitle={this.state.ProjectDetailsNAME} />
+        <ProjectDetails id={this.state.ProjectDetailsID} />
         <Footer />
       </Fragment>
     );

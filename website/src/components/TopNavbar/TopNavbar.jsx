@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import "../../asset/CSS/custom.css";
 import "../../asset/CSS/bootstrap.min.css";
+import "../../asset/CSS/responsive.css";
 
 class TopNavbar extends Component {
   constructor(props) {
